@@ -3,11 +3,14 @@
 }
 
 .navbar-nav .nav-link:hover {
-    color: rgba(0,0,0,.5) !important;
+    /* color: rgba(0,0,0,.5) !important; */
+    color: #F26604 !important;
 }
 
 body {
     font-family: 'Lato', sans-serif;
+    /* added as the navbar is currently fixed to the top */
+    padding-top: 60px;
 }
 
 #blogtitle {
@@ -15,19 +18,25 @@ body {
 }
 
 .navbar{
-    background-color: #C6DCED;
+    background-color: white;
+}
+
+#portfolio{
+    background-color: white;
 }
 
 .jumbotron{
-    background-image: linear-gradient(#C6DCED, white);;
+    /* background-image: linear-gradient(#C6DCED, white); */
+    /* background-image: linear-gradient(#F26604, white); */
+    background-color: #F26604;
 }
 
 #aboutMeSection{
-   background-color: black;
+   background-color: #EEEEEE;
 }
 
 #technologies{
-    background-color: #E2F1F6;
+    background-color: white;
 }
 
 @media (min-width: 992px) {

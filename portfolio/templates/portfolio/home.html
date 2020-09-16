@@ -4,7 +4,7 @@
 
 {% block content %}
 
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron jumbotron-fluid mb-0 mt-10">
     <div class="container">
 
         <div class="container">
@@ -17,9 +17,9 @@
                 </div>
                 <div class="col-lg-7 col-md-6">
                     <div class="auto-my">
-                        <h1 class="display-4 text-md-left text-center">Software Developer</h1>
+                        <h1 class="display-4 text-md-left text-center text-white">Software Developer</h1>
                         <br>
-                        <h3 class="text-md-left text-center">Hi there, welcome to my website. Here you can view my project portfolio, find out about me and the technologies i use and contact me.</h3>
+                        <h3 class="text-md-left text-center text-white">Hi there, welcome to my website. Here you can view my project portfolio, find out about me and the technologies i use and contact me.</h3>
                         <br>
                         <div class="text-md-left text-center">
                             <button type="button" class="btn btn-outline-primary text-center">More About Me</button>
@@ -32,32 +32,34 @@
     </div>
 </div>
 
-<div class="container col-lg-11 col-md-11">
-    <h2 class="text-left mt-5">Portfolio</h2>
-    <hr>
-    <div class="row">
-        {% for project in projects %}
-        <div class="col-lg-4 col-md-6">
+<div class="col-lg-12" id="portfolio">
+    <div class="container col-lg-11 col-md-11 pt-5 pb-5" >
+        <h1 class="text-center display-4">Portfolio</h1>
+        <hr>
+        <div class="row">
+            {% for project in projects %}
+            <div class="col-lg-4 col-md-6">
 
-        {% if project.project_url %}
-        <a href="{{project.project_url}}">
+            {% if project.project_url %}
+            <a href="{{project.project_url}}">
+                <img src="{{ project.project_image.url }}" alt='New Image' class="img-fluid mb-2">
+            </a>
+            {% else %}
             <img src="{{ project.project_image.url }}" alt='New Image' class="img-fluid mb-2">
-        </a>
-        {% else %}
-        <img src="{{ project.project_image.url }}" alt='New Image' class="img-fluid mb-2">
-        {% endif %}
+            {% endif %}
 
-        <h2>{{ project.title }}</h2>
-        <p>{{ project.description }}</p>
+            <h2>{{ project.title }}</h2>
+            <p>{{ project.description }}</p>
+            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </div>
 
 <div>
 
 
-<div class="container col-lg-12 col-md-12" id="aboutMeSection">
+<div class="container col-lg-12 col-md-12 pt-5 pb-5" id="aboutMeSection">
     <div class = "col-lg-11 col-md-11">
         <h1 class="display-4 text-center">About Me</h1>
         <p>
@@ -66,7 +68,7 @@
     </div>
 </div>
 
-<div class="container col-lg-12 col-md-12" id="technologies">
+<div class="container col-lg-12 col-md-12 pt-5 pb-5" id="technologies">
     <div class = "col-lg-11 col-md-11">
         <h1 class="display-4 text-center">Technologies</h1>
 
