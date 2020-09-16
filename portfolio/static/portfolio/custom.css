@@ -19,11 +19,11 @@ body {
 }
 
 .jumbotron{
-    background-color: #CEE2EE;
+    background-image: linear-gradient(#C6DCED, white);;
 }
 
 #aboutMeSection{
-   background-color: #B5D8ED;
+   background-color: black;
 }
 
 #technologies{
@@ -36,5 +36,11 @@ body {
     }
     #blogdetailtitle {
         font-size: 5rem;
+    }
+}
+
+@media (max-width: 800px) {
+    #MeImage {
+        max-width: 70% !important;
     }
 }

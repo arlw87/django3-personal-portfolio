@@ -6,18 +6,28 @@
 
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <h1 class="display-4 text-center">Software Developer</h1>
-        <p class="lead text-center">I am a new and passion software developer who loves to create new exciting solution using technology</p>
+
         <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col col-lg-8">
-                    <img src="{% static 'portfolio/IMG_0213.JPG' %}" class="img-fluid">
+            <!-- justify-content-md-center -->
+            <div class="row">
+                <div class="col-lg-4 col-md-5 col-sm-12">
+                        <img src="{% static 'portfolio/Me2.png' %}" id="MeImage" class="img-fluid mx-auto d-block">
+                </div>
+                <div class="col-lg-1 col-md-1">
+                </div>
+                <div class="col-lg-7 col-md-6">
+                    <div class="auto-my">
+                        <h1 class="display-4 text-md-left text-center">Software Developer</h1>
+                        <br>
+                        <h3 class="text-md-left text-center">Hi there, welcome to my website. Here you can view my project portfolio, find out about me and the technologies i use and contact me.</h3>
+                        <br>
+                        <div class="text-md-left text-center">
+                            <button type="button" class="btn btn-outline-primary text-center">More About Me</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <br>
-                <div class="text-center">
-                    <button type="button" class="btn btn-primary text-center">More About Me</button>
-                </div>
+
         </div>
     </div>
 </div>
@@ -51,21 +61,21 @@
     <div class = "col-lg-11 col-md-11">
         <h1 class="display-4 text-center">About Me</h1>
         <p>
-            Trained as an electronic engineer from the university of Southampton, i have been working in the Space industry for the last 10 years. Over the years i have found that i have a passion for create and building technologic solution using software and hardware. I have therefore have decided to pursue a career change into software development. 
+            Trained as an electronic engineer from the university of Southampton, i have been working in the Space industry for the last 10 years. Over the years i have found that i have a passion for create and building technologic solution using software and hardware. I have therefore have decided to pursue a career change into software development.
         </p>
     </div>
 </div>
-    
+
 <div class="container col-lg-12 col-md-12" id="technologies">
     <div class = "col-lg-11 col-md-11">
         <h1 class="display-4 text-center">Technologies</h1>
-      
+
             <ul>
                 <li>Raspberry Pi</li>
                 <li>Java</li>
-        
+
             </ul>
-      
+
     </div>
 </div>
 {% endblock %}
