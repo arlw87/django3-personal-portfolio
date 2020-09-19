@@ -21,6 +21,10 @@ body {
     background-color: white;
 }
 
+.navbar-collapse{
+    text-align: center;
+}
+
 #portfolio{
     background-color: white;
 }
@@ -31,13 +35,20 @@ body {
     background-color: #F26604;
 }
 
-#aboutMeSection{
+#aboutMe{
    background-color: #EEEEEE;
 }
 
-#technologies{
+#tech{
     background-color: white;
 }
+
+/* .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+} */
 
 @media (min-width: 992px) {
     #hometext {

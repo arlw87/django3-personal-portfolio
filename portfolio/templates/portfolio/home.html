@@ -21,9 +21,6 @@
                         <br>
                         <h3 class="text-md-left text-center text-white">Hi there, welcome to my website. Here you can view my project portfolio, find out about me and the technologies i use and contact me.</h3>
                         <br>
-                        <div class="text-md-left text-center">
-                            <button type="button" class="btn btn-outline-primary text-center">More About Me</button>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -33,7 +30,7 @@
 </div>
 
 <div class="col-lg-12" id="portfolio">
-    <div class="container col-lg-11 col-md-11 pt-5 pb-5" >
+    <!-- <div class="container col-12 col-lg-10 pt-5 pb-5 mx-auto">
         <h1 class="text-center display-4">Portfolio</h1>
         <hr>
         <div class="row">
@@ -42,10 +39,10 @@
 
             {% if project.project_url %}
             <a href="{{project.project_url}}">
-                <img src="{{ project.project_image.url }}" alt='New Image' class="img-fluid mb-2">
+                <img src="{{ project.project_image.url }}" alt='New Image' class="img-fluid mb-2 shadow">
             </a>
             {% else %}
-            <img src="{{ project.project_image.url }}" alt='New Image' class="img-fluid mb-2">
+            <img src="{{ project.project_image.url }}" alt='New Image' class="img-fluid mb-2 shadow-lg">
             {% endif %}
 
             <h2>{{ project.title }}</h2>
@@ -53,14 +50,48 @@
             </div>
             {% endfor %}
         </div>
+    </div> -->
+<!-- </div> -->
+
+<!-- <div class="col-lg-12" id="portfolio"> -->
+    <div class="container col-12 col-xl-10 pt-3 pb-5 mx-auto" id="portfolio">
+        <h1 class="text-center display-4">Portfolio</h1>
+        <hr>
+        <div class="row">
+
+        {% for project in projects %}
+        <div class="col-lg-4 col-md-6">
+
+            <div class="card mb-5 shadow" >
+              <img class="card-img-top" src="{{ project.project_image.url }}" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title">{{ project.title }}</h4>
+                <p class="card-text">{{ project.description }}</p>
+                {% if project.project_url %}
+                <a href="{{project.project_url}}" class="btn btn-primary">
+                    Find out more
+                </a>
+                {% endif %}
+              </div>
+            </div>
+        </div>
+        {% endfor %}
+
+        </div>
     </div>
+<!-- </div> -->
 </div>
 
-<div>
 
 
-<div class="container col-lg-12 col-md-12 pt-5 pb-5" id="aboutMeSection">
-    <div class = "col-lg-11 col-md-11">
+
+
+
+
+
+
+<div class="container col-12 pt-3 pb-5" id="aboutMe">
+    <div class = "col-12 col-xl-10 mx-auto">
         <h1 class="display-4 text-center">About Me</h1>
         <p>
             Trained as an electronic engineer from the university of Southampton, i have been working in the Space industry for the last 10 years. Over the years i have found that i have a passion for create and building technologic solution using software and hardware. I have therefore have decided to pursue a career change into software development.
@@ -68,16 +99,29 @@
     </div>
 </div>
 
-<div class="container col-lg-12 col-md-12 pt-5 pb-5" id="technologies">
-    <div class = "col-lg-11 col-md-11">
+<div class="container col-12 pt-3 pb-5" id="tech">
+    <div class = "col-12 col-xl-10 mx-auto ">
         <h1 class="display-4 text-center">Technologies</h1>
-
-            <ul>
-                <li>Raspberry Pi</li>
-                <li>Java</li>
-
-            </ul>
-
+            <div class="row pt-3">
+                {% for tech in technologies %}
+                <div class="col-6 col-md-4 col-lg-2 mx-auto py-3">
+                    <img src="{{ tech.tech_image.url }}" class="mx-auto d-block" height="100" width="100">
+                    <h5 class="pt-3 text-center">{{ tech.title }}</h5>
+                </div>
+                {% endfor %}
+            </div>
     </div>
 </div>
+
+<!-- <a href="https://iconscout.com/icons/java" target="_blank">Java Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia" target="_blank">Icon Mafia</a> -->
+
+<!-- Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+
+<!-- Icons made by <a href="https://icon54.com/" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+
+<!-- <footer class="footer"> -->
+    <div class="bg-dark text-white py-2">
+        <p class="my-auto col-11 text-center">Github and LinkedIn icons from <a href="https://fontawesome.com/">font awesome</a> Technology icons from <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a>, <a href="https://www.flaticon.com/authors/pixel-perfect" >Pixel Perfect</a> and <a href="https://iconscout.com/contributors/vorillaz/icons" >Vorillaz</a> Rocket from <a href="https://www.flaticon.com/authors/pixel-perfect"> Pixel Perfect</p>
+    </div>
+<!-- </footer> -->
 {% endblock %}
