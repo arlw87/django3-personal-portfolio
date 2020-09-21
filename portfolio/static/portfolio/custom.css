@@ -71,24 +71,15 @@ body {
     /* text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 1px 1px 3px rgba(153,152,150,0.49); */
 }
 
-/* .footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-} */
-
-@media (min-width: 992px) {
-    #hometext {
-        font-size: 4rem;
-    }
-    #blogdetailtitle {
-        font-size: 5rem;
-    }
-}
-
-/* @media (max-width: 800px) {
+@media (max-width: 576px) {
     #MeImage {
         max-width: 70% !important;
     }
-} */
+    #headlineText {
+        font-size: 10vw;
+    }
+
+    #headlineDesc {
+        font-size: 6vw;
+    }
+}
