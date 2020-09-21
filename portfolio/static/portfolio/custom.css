@@ -35,12 +35,40 @@ body {
     background-color: #F26604;
 }
 
+/* hr{
+    background-color: #F26604;
+} */
+
+/* Make buttons orange colored to the theme */
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+    background-color: #F26604 !important;
+    border-color: #F26604 !important;
+}
+
+.btn-primary:hover {
+    background-color: #EE8B45 !important;
+    border-color: #EE8B45 !important;
+}
+
+.hyperLinkColor{
+    color: #F26604;
+}
+
 #aboutMe{
    background-color: #EEEEEE;
 }
 
+#contactMe{
+    background-color: #EEEEEE;
+}
+
 #tech{
     background-color: white;
+}
+
+#headlineText{
+    color: white;
+    /* text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5), 1px 1px 3px rgba(153,152,150,0.49); */
 }
 
 /* .footer {
@@ -59,8 +87,8 @@ body {
     }
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
     #MeImage {
         max-width: 70% !important;
     }
-}
+} */
