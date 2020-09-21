@@ -21,12 +21,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'g)1+#m*=(e@h#brxksp@1)-$uj$ev+x+((@@g(@kn$gxz3ny4l'
+#SECRET_KEY = 'g)1+#m*=(e1h#brxksp@1)-$u@83961ev+x+((@@g(@kn$gxz3ny4lG8fEG0N!BXh'
 
+SECRET_KEY = '$k*mv5w#ascw$rsnixrufp#5y40)6h9yms1kkq=15_o=zp52nj-=9Ua3|Q1$9!`ocKz_n1lceuwf&7j9nugrnh*c)59(35r0ch+i)q4%)j'
+
+#testing saving on paython Anywhere
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['arlw87.pythonanywhere.com']
 
 
 # Application definition
@@ -122,5 +125,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
