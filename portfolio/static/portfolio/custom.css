@@ -75,7 +75,7 @@ body {
     #MeImage {
         max-width: 70% !important;
     }
-    #headlineText {
+    .headlineText {
         font-size: 10vw;
     }
 
