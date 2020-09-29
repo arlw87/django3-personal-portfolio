@@ -29,7 +29,7 @@ SECRET_KEY = '$k*mv5w#ascw$rsnixrufp#5y40)6h9yms1kkq=15_o=zp52nj-=9Ua3|Q1$9!`ocK
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['arlw87.pythonanywhere.com']
+ALLOWED_HOSTS = ['www.andrew-white.info']
 
 
 # Application definition
